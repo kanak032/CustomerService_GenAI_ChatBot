@@ -1,7 +1,3 @@
-Here's a polished and professional version of your `README.md` file for the **Medical Q\&A Chatbot**, formatted cleanly and enhanced for clarity, markdown rendering, and readability on platforms like GitHub:
-
----
-
 # 🩺 Medical Q\&A Chatbot
 
 ## 📖 Overview
