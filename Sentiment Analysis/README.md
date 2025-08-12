@@ -60,7 +60,7 @@ Using a virtual environment is highly recommended:
 # Create virtual environment
 python -m venv venv
 ```
-# Activate environment
+#### Activate environment
 ```bash
 # On Windows:
 .\venv\Scripts\activate
@@ -72,8 +72,7 @@ source venv/bin/activate
 ### 4. Install Dependencies
 Install all required packages:
 ```bash
-pip install streamlit langchain-community faiss-cpu sentence-transformers python-dotenv google-generativeai transformers nltk
-```
+pip install -r requirements.txt
 ### 5. Set Up Your API Key(If you are using your own)
 Create a .env file in the project root and add your Gemini API key:
 
