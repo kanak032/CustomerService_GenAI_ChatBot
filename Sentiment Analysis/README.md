@@ -73,6 +73,7 @@ source venv/bin/activate
 Install all required packages:
 ```bash
 pip install -r requirements.txt
+```
 ### 5. Set Up Your API Key(If you are using your own)
 Create a .env file in the project root and add your Gemini API key:
 
