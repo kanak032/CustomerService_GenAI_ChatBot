@@ -39,8 +39,9 @@ Follow the steps below to set up the project on your local system.
 ### 2. 📥 Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd Medical-Chatbot
+git clone https://github.com/kanak032/CustomerService_GenAI_ChatBot.git
+cd CustomerService_GenAI_ChatBot
+cd Medical Chatbot
 ```
 
 ---
