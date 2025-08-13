@@ -45,25 +45,28 @@ Each model was prompted with the same topic(Generative AI). The generated articl
 ```bash
 git clone https://github.com/kanak032/CustomerService_GenAI_ChatBot.git
 cd Article_generator_chatbot
-
-2.Create a Virtual Environment (Optional but Recommended)
+```
+### 2.Create a Virtual Environment (Optional but Recommended)
+```bash
 python3.10 -m venv venv
 source venv/bin/activate  # For Linux/Mac
 venv\Scripts\activate     # For Windows
-
-3.Install Dependencies
+```
+### 3.Install Dependencies
+```bash
 pip install -r requirements.txt
-
+```
 ###  Ollama Setup (For LLaMA3 and Mistral support)
 1. Download and install Ollama: https://ollama.com/download
 2. Make sure it's running locally and available in your system path.
 3. Models used: `llama3:8b`, `mistral`
 
-▶️ How to Run:
+### ▶️ How to Run:
 Run the following command on your terminal:
+```bash
 streamlit run chatbot.py
-
-📊 Output
+``` 
+### 📊 Output
 All generated articles are stored under the outputs/ directory
 
 ## 📌 Notes
