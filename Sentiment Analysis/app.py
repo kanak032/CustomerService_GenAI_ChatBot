@@ -12,7 +12,7 @@ from nltk.sentiment import SentimentIntensityAnalyzer
 load_dotenv()
 
 # --- Configuration ---
-FAISS_INDEX_PATH = r"D:\Internship\Seniment_Analysis\faiss_index"
+FAISS_INDEX_PATH = "faiss_index"  #faiss_index folder path goes here. Make sure path is correct !!!!!!!!!
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 API_KEY = os.environ.get("GOOGLE_API_KEY")
 
@@ -132,3 +132,4 @@ if st.button("Get Answer"):
                             st.info(f"Source Question: {doc.metadata['source']}")
     else:
         st.warning("Please enter a question first.")
+
