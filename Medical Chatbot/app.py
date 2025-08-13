@@ -37,7 +37,7 @@ def load_faiss_index(_embeddings):
     print("Loading FAISS index...")
     if not os.path.exists(FAISS_INDEX_PATH):
         st.error(f"Knowledge base ({FAISS_INDEX_PATH}) not found!")
-        st.warning("Please run 'python new.py' first to create the vector database.")
+        st.warning("Please run 'vector_db.ipynb' first to create the vector database.")
         st.stop()
     
     vectordb = FAISS.load_local(
@@ -108,3 +108,4 @@ if st.button("Get Answer"):
                             st.info(f"Source Question: {doc.metadata['source']}")
     else:
         st.warning("Please enter a question first.")
+
