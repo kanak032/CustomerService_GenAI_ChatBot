@@ -11,20 +11,28 @@ A modular GenAI-based chatbot designed to handle customer service queries, gener
 
 ```bash
 CustomerService_GenAI_ChatBot/
-├── article_generator_chatbot/       # Task 1: Article generation using open-source LLMs
-│   ├── mistral_generator.py
-│   ├── llama_generator.py
+├── Article_generator_chatbot/       # Task 1: Article generation using open-source LLMs
+│   ├── outputs/
+|   ├── .env                         # Stores API keys (not uploaded to GitHub)
+│   ├── Comparison Study LLMs.pdf    # 📄 Comparison report of 3 open-source LLMs
 │   ├── README.md
-│   └── LLM_Comparison_Document.pdf  # 📄 Comparison report of 3 open-source LLMs
+|   ├── chatbot.py
+│   └── requirements.txt 
 │
-├── medical_chatbot/                 # Task 2: Medical QnA chatbot using MedQuAD
-│   ├── streamlit_app.py
-│   ├── medquad_model.pkl
-│   └── utils/
+├── Medical Chatbot/                 # Task 2: Medical QnA chatbot using MedQuAD
+│   ├── faiss_index/
+|   ├── .env                         # Stores API keys (not uploaded to GitHub)
+│   ├── README.md
+│   ├── app.py
+│   ├── medquad_parsed_data.csv
+│   ├── parsing.py
+│   ├── requirements.txt
+│   └── vector_db.ipynb (Colab File to generate Vector Embeddings)
 │
-├── sentiment_analysis/             # Task 3: Emotion detection for better chatbot responses
-│   ├── sentiment_analysis.py
-│
-├── .env                            # Stores API keys (not uploaded to GitHub)
-├── requirements.txt
+├── Sentiment Analysis/             # Task 3: Emotion detection for better chatbot responses
+│   ├── faiss_index/
+│   ├── .env                        # Stores API keys (not uploaded to GitHub)
+|   ├── README.md
+|   ├── app.py                        
+|   ├── requirements.txt 
 └── README.md                       # ← You're here!
