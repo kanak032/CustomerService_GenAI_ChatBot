@@ -57,10 +57,34 @@ venv\Scripts\activate     # For Windows
 pip install -r requirements.txt
 ```
 ###  Ollama Setup (For LLaMA3 and Mistral support)
-1. Download and install Ollama: https://ollama.com/download
-2. Make sure it's running locally and available in your system path.
-3. Models used: `llama3:8b`, `mistral`
-
+##### 1. Download and install Ollama:
+   https://ollama.com/download
+##### 2. Ensure Ollama is Running
+After installation:
+Make sure the Ollama is running in the background.
+Verify by running the following command in your terminal or command prompt:
+```bash
+ollama --version
+```
+##### 3. Pull Required Models
+This project uses the following large language models:
+->llama3:8b
+->mistral
+Pull them using the commands below:
+```bash
+ollama pull llama3:8b
+ollama pull mistral
+```
+##### 4.Verify Installation (Optional)
+To test if the models are working:
+```bash
+ollama run llama3:8b
+```
+or
+```bash
+ollama run mistral
+```
+ℹ️ Note: The models are stored locally after pulling and do not require internet once downloaded.
 ### ▶️ How to Run:
 Run the following command on your terminal:
 ```bash
